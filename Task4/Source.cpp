@@ -20,8 +20,13 @@ int main() {
 	cin >> adress;
 	
 	bool isMarried;
-	cout << "U married? (1/0) ";
-	cin >> isMarried;
+	string isMarried2;
+	cout << "U married? (true/false) ";
+	cin >> isMarried2;
+	if (isMarried2 == "true")
+		isMarried = true;
+	else if (isMarried2 == "false")
+		isMarried = false;
 
 	float height;
 	cout << "How high are you? "; //a lot
@@ -38,8 +43,5 @@ int main() {
 		cout << name+": " << "Age: " << age << ", "<< "Gender: " << gender << "ale, " << "Adress: " << adress << ", Married? " << isMarried << ", " << height << "cm" << endl;
 	else if (gender == 'f' || gender == 'F')
 		cout << name + ": " << "Age: " << age << ", " << "Gender: " << gender << "emale, " << "Adress: " << adress << ", Married? " << isMarried << ", " << height << "cm" << endl;
-	else
-		cout << name + ": " << "Age: " << age << ", " << "Gender: " << gender << ", Adress: " << adress << ", Married? " << isMarried << ", " << height << "cm" << endl;
-
 	return 0;
 }
