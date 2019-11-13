@@ -1,7 +1,5 @@
-#include <iostream>
 #include <stdio.h>
 using namespace std;
-
 
 int main() {
 
@@ -15,7 +13,7 @@ int main() {
 
 	char gender[1];
 	printf("Gender? (m / f)? ");
-	scanf_s("%c",gender,1);
+	scanf_s(" %c",gender,1);
 
 	char adress[30];
 	printf("Adress? ");
@@ -27,20 +25,11 @@ int main() {
 
 	float height;
 	printf("How high are you? "); //a lot
-	scanf_s("%d",&height);
+	scanf_s("%f",&height);
 
-	/*
-	int creditCardNumber;
-	cout << "Credit card number?";
-	cin >> creditCardNumber;
-	*/
-
-	cout << "\n";
 	if (gender[0] == 'm' || gender[0] == 'M')
-		printf("Name: ", name, ", Age:", age, ", Gender: ", gender,", Adress: ", adress, ", Married? ", isMarried, ", Height: ", height);
+		printf("Name: %s, Age: %d, Gender: %cale, Adress: %s, Married? %d, Height: %f\n", name, age, gender[0], adress, isMarried, height);
 	else if (gender[0] == 'f' || gender[0] == 'F')
-		;
-	else
-		;
+		printf("Name: %s, Age: %d, Gender: %cemale, Adress: %s, Married? %d, Height: %f\n", name, age, gender[0], adress, isMarried, height);
 	return 0;
 }
