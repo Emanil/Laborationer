@@ -1,0 +1,13 @@
+1. What did you learn? What did you know already?
+
+	I got some repetition of things i've known before in C++, like "if()", "cout" and the loops. 
+	However some the new things i learned was printf() and scanf().
+
+2. What was difficult in the lab? How did you overcome it?
+
+	I feel like for-loops are always where it gets a little difficult but once you insert some outputs so you can see what's going on, it's easier to understand the code-flow. 
+	Another thing was with the scanf()/printf() and the %"single character" stuff that was hard to understand since everything was not covered in class. But it was easy to google.
+
+3. How can the lab be improved?
+
+	More clear instructions on how what to do. For example: In task 8 it's not fully clear that you need to do both pyramids. 
